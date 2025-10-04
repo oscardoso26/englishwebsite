@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Vocabulary - A2 & B1 Levels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="cambridge-logo">
+                <img src="images/Cambridge.png" alt="University of Cambridge" class="cambridge-shield">
+            </div>
+            <div class="header-text">
+                <h1>ENGLISH VOCABULARY</h1>
+                <p>A2 & B1 Levels</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seviye Seçimi -->
+    <div class="level-selector">
+        <button class="level-button active" data-level="a2">
+            <span class="level-title">A2 Key</span>
+            <span class="level-desc">Elementary</span>
+        </button>
+        <button class="level-button" data-level="b1">
+            <span class="level-title">B1 Preliminary</span>
+            <span class="level-desc">Intermediate</span>
+        </button>
+    </div>
+
+    <header class="sub-header">
+        <nav class="nav-tabs">
+            <button class="tab-button active" data-tab="vocabulary">Vocabulary</button>
+            <button class="tab-button" data-tab="quiz">Quiz</button>
+            <button class="tab-button" data-tab="review">Review Quiz</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="level-indicator">
+            <span id="current-level">A2 Key</span>
+        </div>
+        <div id="vocabulary-grid" class="vocabulary-grid tab-content active">
+            <!-- Kelimeler JavaScript ile buraya eklenecek -->
+        </div>
+        
+        <!-- Kelime Sayacı -->
+        <div class="word-counter">
+            <div class="counter-content">
+                <div class="counter-number" id="word-count">0</div>
+                <div class="counter-label">Kelime</div>
+                <div class="counter-categories">
+                    <div class="category-item">
+                        <span class="category-letter">A</span>
+                        <span class="category-count" id="count-a">0</span>
+                    </div>
+                    <div class="category-item">
+                        <span class="category-letter">B</span>
+                        <span class="category-count" id="count-b">0</span>
+                    </div>
+                    <div class="category-item">
+                        <span class="category-letter">C</span>
+                        <span class="category-count" id="count-c">0</span>
+                    </div>
+                    <div class="category-item">
+                        <span class="category-letter">D</span>
+                        <span class="category-count" id="count-d">0</span>
+                    </div>
+                    <div class="category-item">
+                        <span class="category-letter">E</span>
+                        <span class="category-count" id="count-e">0</span>
+                    </div>
+                    <div class="category-item">
+                        <span class="category-letter">F</span>
+                        <span class="category-count" id="count-f">0</span>
+                    </div>
+                                    <div class="category-item">
+                    <span class="category-letter">G</span>
+                    <span class="category-count" id="count-g">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">H</span>
+                    <span class="category-count" id="count-h">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">I</span>
+                    <span class="category-count" id="count-i">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">J</span>
+                    <span class="category-count" id="count-j">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">K</span>
+                    <span class="category-count" id="count-k">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">L</span>
+                    <span class="category-count" id="count-l">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">M</span>
+                    <span class="category-count" id="count-m">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">N</span>
+                    <span class="category-count" id="count-n">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">O</span>
+                    <span class="category-count" id="count-o">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">P</span>
+                    <span class="category-count" id="count-p">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">Q</span>
+                    <span class="category-count" id="count-q">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">R</span>
+                    <span class="category-count" id="count-r">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">S</span>
+                    <span class="category-count" id="count-s">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">T</span>
+                    <span class="category-count" id="count-t">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">U</span>
+                    <span class="category-count" id="count-u">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">V</span>
+                    <span class="category-count" id="count-v">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">W</span>
+                    <span class="category-count" id="count-w">0</span>
+                </div>
+                <div class="category-item">
+                    <span class="category-letter">Y</span>
+                    <span class="category-count" id="count-y">0</span>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="quiz-container" class="quiz-container tab-content">
+            <div class="quiz-content">
+                <div class="quiz-image-container">
+                    <img id="quiz-image" src="" alt="Quiz Image">
+                </div>
+                <div class="quiz-question">
+                    <h2>What is this?</h2>
+                    <div class="pronunciation-indicator" id="pronunciation-indicator" style="display: none;">
+                        <span class="speaker-icon">🔊</span>
+                        <span class="pronunciation-text">Listening to pronunciation...</span>
+                    </div>
+                </div>
+                <div class="quiz-options">
+                    <button class="quiz-option" data-index="0"></button>
+                    <button class="quiz-option" data-index="1"></button>
+                    <button class="quiz-option" data-index="2"></button>
+                    <button class="quiz-option" data-index="3"></button>
+                </div>
+                <button class="next-question-btn" style="display: none;">Next Question</button>
+                <div class="quiz-score">
+                    <h3>Score: <span id="score">0</span></h3>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Review Quiz Container -->
+        <div id="review-container" class="quiz-container tab-content">
+            <div class="review-header">
+                <h2>Review Quiz - Wrong Answers Only</h2>
+                <div class="wrong-words-info">
+                    <span id="wrong-words-count">0</span> words to review
+                </div>
+                <button class="clear-wrong-words-btn" id="clear-wrong-words">Clear History</button>
+            </div>
+            <div class="quiz-content" id="review-quiz-content" style="display: none;">
+                <div class="quiz-image-container">
+                    <img id="review-quiz-image" src="" alt="Review Quiz Image">
+                </div>
+                <div class="quiz-question">
+                    <h2>What is this?</h2>
+                    <div class="pronunciation-indicator" id="review-pronunciation-indicator" style="display: none;">
+                        <span class="speaker-icon">🔊</span>
+                        <span class="pronunciation-text">Listening to pronunciation...</span>
+                    </div>
+                </div>
+                <div class="quiz-options">
+                    <button class="review-quiz-option" data-index="0"></button>
+                    <button class="review-quiz-option" data-index="1"></button>
+                    <button class="review-quiz-option" data-index="2"></button>
+                    <button class="review-quiz-option" data-index="3"></button>
+                </div>
+                <button class="review-next-question-btn" style="display: none;">Next Question</button>
+                <div class="quiz-score">
+                    <h3>Score: <span id="review-score">0</span></h3>
+                </div>
+            </div>
+            <div class="no-wrong-words" id="no-wrong-words" style="display: none;">
+                <p>No wrong answers yet! Complete some regular quizzes first.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal popup -->
+    <div id="word-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="">
+                <div class="word-info">
+                    <div class="word-header">
+                        <h2 id="modal-word">Kelime</h2>
+                        <button id="audio-button" class="audio-btn" title="Listen to pronunciation">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p id="modal-definition">Tanım burada görünecek...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="vocabulary-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
